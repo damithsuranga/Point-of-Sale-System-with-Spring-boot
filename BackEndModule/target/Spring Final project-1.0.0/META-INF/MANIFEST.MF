@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Version: 1.0.0
+Built-By: Damith
+Implementation-Vendor-Id: lk.ijse.dep.springfinal
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_111
+Main-Class: ${start-class}
+

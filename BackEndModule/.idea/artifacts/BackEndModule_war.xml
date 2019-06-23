@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BackEndModule:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Spring Final project-1.0.0.war">
+      <element id="artifact" artifact-name="BackEndModule:war exploded" />
+    </root>
+  </artifact>
+</component>

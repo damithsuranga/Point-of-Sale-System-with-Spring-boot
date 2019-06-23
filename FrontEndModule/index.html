@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Modern POS 2019 - DEP3 Edition">
+    <title>Modern POS · DEP</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Main styles -->
+    <link href="css/style/styles.css" rel="stylesheet">
+    <!-- Dashboard Styles -->
+    <link rel="stylesheet" href="css/style/dashboard.css">
+
+    <style>
+        #cimg{
+            top: 20%;
+        }
+
+        #customers{
+            -moz-box-shadow: -5px -9px 19px #000000;
+            -webkit-box-shadow: -5px -9px 19px #000000;
+            box-shadow: -5px -9px 19px #000000;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 */
+            background: #e1ffff; /* Old browsers */
+            background: -moz-linear-gradient(top, #55fff0 0%, #e1ffff 7%, #55fff0 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #55fff0 0%,#e1ffff 7%, #55fff0 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #55fff0 0%,#e1ffff 7%, #55fff0 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=0 ); /* IE6-9 */
+            left: 30%;
+        }
+        #items{
+            -moz-box-shadow: -5px -9px 19px #000000;
+            -webkit-box-shadow: -5px -9px 19px #000000;
+            box-shadow: -5px -9px 19px #000000;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 */
+            background: #e1ffff; /* Old browsers */
+            background: -moz-linear-gradient(top, #55fff0 0%, #e1ffff 7%, #55fff0 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #55fff0 0%,#e1ffff 7%, #55fff0 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #55fff0 0%,#e1ffff 7%, #55fff0 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=0 ); /* IE6-9 */
+            left: 30%;
+        }
+        #orders{
+            -moz-box-shadow: -5px -9px 19px #000000;
+            -webkit-box-shadow: -5px -9px 19px #000000;
+            box-shadow: -5px -9px 19px #000000;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 */
+            background: #e1ffff; /* Old browsers */
+            background: -moz-linear-gradient(top, #55fff0 0%, #e1ffff 7%, #55fff0 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #55fff0 0%,#e1ffff 7%, #55fff0 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #55fff0 0%,#e1ffff 7%, #55fff0 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=0 ); /* IE6-9 */
+            left: 30%;
+        }
+
+            #cimg{
+                position: absolute;
+                height: 10%;
+                width: 30%;
+            }
+        #mainmenu{
+
+            position: relative;
+            font-family: "Segoe UI Semibold";
+            text-transform: uppercase;
+            font-size: 2em;
+            letter-spacing: 4px;
+            overflow: hidden;
+            background: linear-gradient(90deg, #000, #03010d, #000);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: animate 15s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0);
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: -500%;
+            }
+            100% {
+                background-position: 500%;
+            }
+        }
+
+        #customers:hover{
+            -moz-box-shadow: -6px -9px 71px #143cde;
+            -webkit-box-shadow: -6px -9px 71px #143cde;
+            box-shadow: -6px -9px 71px #143cde;
+        }
+        #items:hover{
+            -moz-box-shadow: -6px -9px 71px #143cde;
+            -webkit-box-shadow: -6px -9px 71px #143cde;
+            box-shadow: -6px -9px 71px #143cde;
+        }
+        #orders:hover{
+            -moz-box-shadow: -6px -9px 71px #143cde;
+            -webkit-box-shadow: -6px -9px 71px #143cde;
+            box-shadow: -6px -9px 71px #143cde;
+        }
+
+        #nav{
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
+            background: #feffff; /* Old browsers */
+            background: -moz-linear-gradient(top,  #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+
+        }
+        #main{
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7fbfc+0,d9edf2+40,add9e4+100;Blue+3D+%231 */
+            background: #f7fbfc; /* Old browsers */
+            background: -moz-linear-gradient(top,  #f7fbfc 0%, #d9edf2 40%, #add9e4 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=0 ); /* IE6-9 */
+
+        }
+        #footer{
+            position: absolute;
+            top: 100%;
+            width: 90%;
+            left: 4%;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7fbfc+0,d9edf2+40,add9e4+100;Blue+3D+%231 */
+            background: #f7fbfc; /* Old browsers */
+            background: -moz-linear-gradient(top,  #f7fbfc 0%, #d9edf2 40%, #add9e4 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=0 ); /* IE6-9 */
+
+        }
+        #footer h4{
+
+            font-size: 20px;
+            left: 10%;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Point of Sale System</a>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav id="nav" class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-customers.html">
+                            <i class="fas fa-user-friends"></i>
+                            Manage Customers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-items.html">
+                            <i class="fas fa-sitemap"></i>
+                            Manage Items
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="place-order.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            Place Order
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search-orders.html">
+                            <i class="fas fa-search"></i>
+                            Search Orders
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="main" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 id="mainmenu" class="h2">Point of Sales System - Main menu</h1>
+            </div>
+            <div class="row">
+                <div class="col col-12 col-lg-8">
+
+                    <div   id="customers"  class="alert alert-primary" role="alert">
+
+                        <h3>
+                            <div id="cimg"><img src="images/Customer_Male_Light.png"></div>
+                            <a class="nav-link" href="manage-customers.html">
+                                <i class="fas fa-user-friends"></i><br>
+                            CUSTOMERS DETAILS<br>
+                            </a>
+                        </h3>
+                        <h1 id="customerCount">5</h1>
+                    </div>
+                </div>
+                <div  class="col col-12 col-lg-8">
+
+                    <div  id="items" class="alert alert-danger" role="alert">
+                        <h3>
+                            <div id="cimg"><img src="images/Add-item-icon.png"></div>
+                            <a class="nav-link" href="manage-items.html">
+                            <i class="fas fa-sitemap"></i><br>
+                            ITEMS DETAILS
+                            </a>
+                        </h3>
+                        <h1 id="itemCount">2</h1>
+                    </div>
+                </div>
+                <div  class="col col-12 col-lg-8">
+
+                    <div  id="orders" class="alert alert-warning" role="alert">
+                        <h3>
+                            <div id="cimg"><img src="images/Order-icon.png"></div>
+                            <a class="nav-link" href="place-order.html">
+                            <i class="fas fa-shopping-cart"></i><br>
+                            ORDERS DETAILS
+                            </a>
+                        </h3>
+                        <h1>10</h1>
+                    </div>
+                </div>
+                <div id="footer" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h4 class="h2">created by damith surnaga </h4>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!--JQuery JS-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--Dashboard Script-->
+<script>
+    // var customerArray = getAllCustomers();
+    // var itemArray = getAllItems();
+    //
+    // function getAllCustomers() {
+    //     return customers;
+    // }
+    // function getAllItems() {
+    //     return items;
+    // }
+    // $("#customerCount").text(customerArray.length);
+    // $("#itemCount").text(itemArray.length);
+</script>
+</body>
+</html>
